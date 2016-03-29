@@ -374,7 +374,7 @@ sub _err_msg {
 	# Remove BOM.
 	$c =~ s/\x{feff}//;
 
-	return @{decode_json($c)->{errors}};
+	return @{from_json($c)->{errors}};
 }
 
 sub _read_stdin {

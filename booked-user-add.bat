@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 set URL=http://www.example.com/booked
 set USER=admin
